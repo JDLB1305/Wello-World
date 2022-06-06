@@ -1,0 +1,32 @@
+class Calculadora:
+    def __init__(self):
+        self.num1 = int(input("Digite un numero: "))
+        self.num2 = int(input("Digite un numero: "))
+
+    def mostrar(self):
+        print("Numero1: ",self.num1)
+        print("Numero2: ",self.num2)
+
+    def suma(self):
+        total = self.num1 + self.num2
+        print("El total de la suma es: ",total)
+
+    def resta(self):
+        total = self.num1 - self.num2
+        print("El total de la resta es: ",total)
+
+    def multi(self):
+        total = self.num1 * self.num2
+        print("El total de la multiplicacion es: ",total)
+
+    def divi(self):
+        total = self.num1 / self.num2
+        print("El total de la division es: ",total)
+
+  
+sujeto=Calculadora()
+sujeto.mostrar()
+sujeto.suma()
+sujeto.resta()
+sujeto.multi()
+sujeto.divi()
