@@ -1,0 +1,18 @@
+class Alumno:
+    def __init__(self):
+        self.nombre = input("Ingrese su nombre: ")
+        self.nota = float(input("Digite su nota: "))
+
+    def mostrar(self):
+        print("Nombre: ",self.nombre)
+        print("Nota: ",self.nota)
+
+    def calculo_nota(self):
+        if self.nota >= 3:
+            print(self.nombre,"Aprobo con ",self.nota)
+        else:
+            print(self.nombre,"Reprobo con ",self.nota)
+
+sujeto=Alumno()
+sujeto.mostrar()
+sujeto.calculo_nota()
